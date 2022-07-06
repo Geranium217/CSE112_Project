@@ -14,6 +14,7 @@ if __name__ == '__main__':
         try:
             results = g.final_expr.parse_string(line, parseAll=True)
         except Exception as e:
+            print(f"Error at line f{address_counter+1}")
             err.error_handle(e)
             exit()
 
