@@ -1,4 +1,14 @@
 #!/usr/bin/bash
 
-python3 -m pip install pyparsing > /dev/null 2>&1;
+
+python3 -c 'import pyparsing' > /dev/null 2>&1;
+
+if [ ! $?='0' ]
+then
+	python3 -m pip install pyparsing > /dev/null 2>&1;
+elif [ $?='0' ]
+then
+	python3 ./SimpleAssembler.py
+fi
+
 
