@@ -1,0 +1,5 @@
+#!/usr/bin/bash
+
+
+python3 ./SimpleSimulator.py
+
